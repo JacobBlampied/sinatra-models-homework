@@ -1,0 +1,9 @@
+<h1>Index Page</h1>
+
+<% @cars.each do |car| %>
+
+  <a href="/cars/<%= car.id %>"><h1><%= car.make %></h1></a>
+  <h3><%= car.model %></h3>
+  <h5><%= car.engine %></h5>
+
+<% end %>
