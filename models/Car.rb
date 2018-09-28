@@ -35,7 +35,7 @@ class Car
   end
 
   def self.find id
-    conn = self.open_connection
+    conn = self.open_communication
     sql = "SELECT * FROM cars WHERE id=#{id}"
     results = conn.exec(sql)
 
@@ -46,7 +46,7 @@ class Car
   end
 
   def self.destroy id
-    conn = self.open_connection
+    conn = self.open_communication
     sql = "DELETE FROM cars WHERE id=#{id}"
     conn.exec(sql)
 

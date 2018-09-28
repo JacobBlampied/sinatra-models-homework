@@ -1,9 +1,9 @@
 <a href="/cars">Back</a>
 <a href="/cars/<%= @car.id %>/edit">Edit</a>
 
-<h1>Show Page <%= @car.engine %></h1>
-<h3>Released <%= @car.model %></h3>
-<h3>Released <%= @car.engine %></h3>
+<h1><%= @car.make %></h1>
+<h3><%= @car.model %></h3>
+<h3><%= @car.engine %></h3>
 
 
 <form class="" action="/cars/@car.id" method="post">
